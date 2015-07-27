@@ -12,6 +12,7 @@ TEST APPROACH
 - consider checking the performance of application (for big amount of generated data)
 - consider verifying if there is no memory leak
 - consider verifying the UI, check the usability
+- consider creating automated tests
 
 
 2 create data reader
@@ -35,6 +36,7 @@ TEST APPROACH
 - consider checking the performance of application (for big amount of generated data)
 - consider verifying if there is no memory leak
 - consider verifying the UI, check the usability
+- consider creating automated tests
 
 
 3 integration test
@@ -43,3 +45,4 @@ TEST APPROACH
 - run program that reads data
 - select the saved csv file as a parameter
 - verify if there are results printed
+- consider creating automated test
