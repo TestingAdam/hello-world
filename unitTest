@@ -51,3 +51,26 @@ public class Transaction {
 	return Transaction.executionPrice;
 	}
 }
+
+public static class TransactionTest {
+
+    @Test
+    public void getDateTest() {
+        Transaction transaction = new Transaction();
+
+        transaction.setDate("11.11.1111");
+	String result = transaction.getDate();
+        assertEquals("11.11.1111", result);
+
+    }
+
+    @Test
+    public void getTransactionIdTest() {
+        Transaction transaction = new Transaction();
+
+        transaction.setTransactionId(4);
+	int result = transaction.getTransactionId();
+        assertEquals(4, result);
+
+    }
+}
