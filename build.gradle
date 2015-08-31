@@ -1,0 +1,28 @@
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'eclipse'
+
+mainClassName = 'HelloWorld'
+
+task hello {
+    HelloWorld.main();
+}
+
+jar {
+   manifest {
+     attributes 'Main-Class': 'HelloWorld'
+ }
+}
+
+public class HelloWorld {
+  public static void main(String[] args) {
+    Greeter greeter = new Greeter();
+    System.out.println(greeter.sayHello());
+  }
+}
+
+public class Greeter {
+  public String sayHello() {
+    return "Hello world2!";
+  }
+}
